@@ -1,7 +1,7 @@
 # assigning each character a binary code
 
 def findcode(my_char):
-    global code
+#    global code = ""
     if my_char == "A":
         code = "0000000"
     elif my_char == "B":
@@ -86,9 +86,9 @@ def findcode(my_char):
         code = "1110"
     elif my_char == "!":
         code = "1101"
-    elif my_char == "''":
+    elif my_char == "'":
         code = "1011"
-    elif my_char == "":
+    elif my_char == " ":
         code = "1001"
     elif my_char == "/n":
         code = "1100"
@@ -144,4 +144,6 @@ def findcode(my_char):
         code = "0001001"
     elif my_char == "z":
         code = "0010101"
+    else:
+        code = ""
     return code
